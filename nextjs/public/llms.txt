@@ -1,0 +1,27 @@
+# Inferis
+
+> Inteligência para a Reforma Tributária. A Inferis lê notas fiscais (NF-e, NFS-e e CT-e, além de CSV e Excel) e calcula, item a item, o custo efetivo, o crédito de CBS e IBS e o preço de cada operação hoje e em 2027, para compras e vendas de bens, serviços e transportes.
+
+Exemplo de referência (nota de R$ 100,00): valor líquido R$ 64,95; a mesma operação em 2027 fica em R$ 90,45, com CBS 11,3% (referência TCU, TC 006.529/2026-7), IBS 0,1% e ICMS por dentro sobre a nova base. Fonte legal: Lei Complementar nº 214/2025. Simulações estimativas, para apoio à decisão.
+
+## Páginas
+
+- [Reforma Tributária: compras](https://inferis.com.br/reforma-tributaria/compras/): crédito amplo de CBS e IBS e custo efetivo de cada compra
+- [Reforma Tributária: vendas](https://inferis.com.br/reforma-tributaria/vendas/): como precificar com CBS e IBS e o custo efetivo do cliente
+- [Reforma Tributária: financeiro](https://inferis.com.br/reforma-tributaria/financeiro/): crédito tributário, capital de giro e split payment
+- [Reforma Tributária: contadores](https://inferis.com.br/reforma-tributaria/contadores/): cálculo aberto de CBS e IBS, valor líquido da NT 2026.008 e Simples híbrido
+- [Reforma Tributária: advogados](https://inferis.com.br/reforma-tributaria/advogados/): impacto da reforma na operação do cliente e referências para contratos
+- [Reforma Tributária: como calcular](https://inferis.com.br/reforma-tributaria/como-calcular/): passo a passo do cálculo e simulador de uma nota
+
+## Simuladores
+
+- [Simulador de Bens (NF-e)](https://inferis.com.br/reforma-tributaria/simulador-nf-e/): Compras de mercadorias. Custo efetivo de hoje e de 2027, item a item, e preço equivalente de compra por fornecedor.
+- [Simulador de Serviços (NFS-e)](https://inferis.com.br/reforma-tributaria/simulador-nfs-e/): Contratação de serviços. Dois cenários para 2027: o fornecedor tira PIS e COFINS do preço, ou mantém o preço e soma CBS e IBS por fora.
+- [Simulador de Transportes (CT-e)](https://inferis.com.br/reforma-tributaria/simulador-ct-e/): Fretes e transportes. Com o regime de PIS e COFINS do transportador; sem essa informação, a Inferis simula os dois cenários.
+
+## Empresa
+
+- Site: https://inferis.com.br/
+- LinkedIn: https://www.linkedin.com/company/inferis-br/
+- Instagram: https://www.instagram.com/inferis.br/
+- Planos: Básico a partir de R$ 414,90/mês e Completo a partir de R$ 1.399,90/mês (contrato anual); 1 análise gratuita, sem cartão.

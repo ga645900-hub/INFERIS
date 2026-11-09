@@ -1,0 +1,1564 @@
+{
+ "/": {
+  "path": "/",
+  "title": "Simulador da Reforma Tributária para compras e vendas | Inferis",
+  "description": "Simule compras e vendas na Reforma Tributária: custo efetivo, crédito amplo da CBS e do IBS e o preço de 2027, nota a nota. 1 análise gratuita, sem cartão.",
+  "canonical": "https://inferis.com.br/",
+  "ogImage": "https://inferis.com.br/assets/og/home.jpg",
+  "h1": "Reforma Tributária, nota a nota.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/#webpage",
+     "url": "https://inferis.com.br/",
+     "name": "Simulador da Reforma Tributária para compras e vendas | Inferis",
+     "description": "Simule compras e vendas na Reforma Tributária: custo efetivo, crédito amplo da CBS e do IBS e o preço de 2027, nota a nota. 1 análise gratuita, sem cartão.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/home.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "O que a Inferis faz?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Inferis lê as suas notas fiscais (NF-e, NFS-e e CT-e, além de CSV e Excel) e calcula, item a item, o custo e o preço de cada operação hoje e em 2027, com CBS, IBS e o crédito amplo. Simula compras e vendas."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Para quem é a Inferis?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para os setores de compras, vendas e financeiro das empresas, e para contadores e advogados que assessoram empresas na Reforma Tributária."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Como funciona o teste gratuito?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crie a conta e use 1 análise gratuita no Simulador e 10 linhas gratuitas no Valor Líquido, sem cartão de crédito e sem recurso bloqueado."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Os resultados são definitivos?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. São simulações estimativas para apoio à decisão. Valide os cenários com seu especialista tributário antes de fechar contratos."
+       }
+      }
+     ]
+    },
+    {
+     "@type": "SoftwareApplication",
+     "@id": "https://inferis.com.br/#app",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "applicationCategory": "BusinessApplication",
+     "applicationSubCategory": "Simulação tributária",
+     "operatingSystem": "Web",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "description": "Simuladores da Reforma Tributária para bens (NF-e), serviços (NFS-e) e transportes (CT-e): lê as notas, além de CSV e Excel, e calcula custo efetivo, crédito de CBS e IBS e o preço de 2027, item a item.",
+     "featureList": [
+      "Simulador de Bens (NF-e)",
+      "Simulador de Serviços (NFS-e)",
+      "Simulador de Transportes (CT-e)",
+      "Módulo Valor Líquido (NT 2026.008)"
+     ],
+     "offers": [
+      {
+       "@type": "Offer",
+       "name": "Básico (anual)",
+       "price": "414.90",
+       "priceCurrency": "BRL"
+      },
+      {
+       "@type": "Offer",
+       "name": "Completo (anual)",
+       "price": "1399.90",
+       "priceCurrency": "BRL"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "compras": {
+  "path": "/reforma-tributaria/compras/",
+  "title": "Reforma Tributária nas compras: crédito CBS e IBS | Inferis",
+  "description": "Lucro presumido e Simples híbrido passam a tomar crédito de CBS e IBS em 2027. Calcule o custo efetivo de cada compra e o preço para negociar com fornecedores.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/compras/",
+  "ogImage": "https://inferis.com.br/assets/og/compras.jpg",
+  "h1": "Reforma Tributária para compras.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/compras/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/compras/",
+     "name": "Reforma Tributária nas compras: crédito CBS e IBS | Inferis",
+     "description": "Lucro presumido e Simples híbrido passam a tomar crédito de CBS e IBS em 2027. Calcule o custo efetivo de cada compra e o preço para negociar com fornecedores.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/compras.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/compras/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/compras/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Reforma Tributária",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Compras",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/compras/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/compras/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "O que é o crédito amplo da Reforma Tributária?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A partir de 2027, a CBS (que substitui PIS e COFINS) dá crédito sobre praticamente toda aquisição da atividade, não só sobre insumos. O IBS segue a mesma lógica. A exceção são bens e serviços de uso e consumo pessoal (LC 214/2025, arts. 47 e 57)."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quem pode tomar crédito de CBS e IBS a partir de 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Empresas do lucro real e do lucro presumido, que hoje não toma crédito de PIS e COFINS, e empresas do Simples Nacional que optarem pelo regime híbrido, recolhendo CBS e IBS por fora."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O que é custo efetivo de uma compra?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É quanto a compra custa de fato para a empresa, depois dos créditos que ela pode tomar. Para quem não toma crédito, o custo efetivo é o valor total da nota. Por isso a mesma nota tem custos diferentes para compradores diferentes."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O que é o preço equivalente de compra 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É o valor bruto que a compra pode ter em 2027 mantendo o mesmo custo efetivo de hoje. É a referência para negociar com o fornecedor com números, e não com percentuais genéricos."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quais arquivos a Inferis lê?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NF-e, NFS-e e CT-e (XML), além de CSV e Excel. O conversor valida e normaliza os dados antes da simulação."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "vendas": {
+  "path": "/reforma-tributaria/vendas/",
+  "title": "Como precificar na Reforma Tributária com CBS e IBS | Inferis",
+  "description": "Formação de preço com CBS e IBS por fora: receita líquida, custo efetivo do seu cliente e o preço de 2027 em duas referências para negociar. 1 análise grátis.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/vendas/",
+  "ogImage": "https://inferis.com.br/assets/og/vendas.jpg",
+  "h1": "Reforma Tributária para vendas.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/vendas/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/vendas/",
+     "name": "Como precificar na Reforma Tributária com CBS e IBS | Inferis",
+     "description": "Formação de preço com CBS e IBS por fora: receita líquida, custo efetivo do seu cliente e o preço de 2027 em duas referências para negociar. 1 análise grátis.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/vendas.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/vendas/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/vendas/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Reforma Tributária",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Vendas",
+       "item": "https://inferis.com.br/reforma-tributaria/vendas/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/vendas/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/vendas/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Como precificar com CBS e IBS em 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Partindo do valor líquido que a venda deixa hoje, a Inferis recompõe a nota de 2027: soma CBS e IBS e aplica por cima os tributos que ainda não foram substituídos, como o ICMS calculado por dentro. O resultado é o preço que mantém o seu resultado."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O que é receita líquida antes de IRPJ e CSLL?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É o que a venda deixa para a empresa depois de tirar os tributos sobre a venda (ICMS, PIS, COFINS, IPI e ICMS-ST), antes dos tributos sobre o lucro. É a grandeza que você quer preservar ao reprecificar."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Por que meu cliente vai olhar o custo efetivo?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque em 2027 ele credita a CBS e o IBS destacados na sua nota. O que pesa na decisão dele é o custo depois do crédito, e não o preço de capa. Conhecer esse número muda a negociação."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O que são as duas formas de projetar o preço?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A primeira é o preço em que você não perde resultado. A segunda é o preço em que o seu cliente mantém o custo efetivo de hoje. São duas referências calculadas para a negociação."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "A Inferis substitui o ERP?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O ERP emite a nota certa. A Inferis transforma os dados das notas em decisões de preço, margem e negociação."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "financeiro": {
+  "path": "/reforma-tributaria/financeiro/",
+  "title": "Reforma Tributária: capital de giro e split payment | Inferis",
+  "description": "Quanto do valor pago vira crédito em 2027 e como isso pesa no caixa: projete custos, receita, crédito tributário e capital de giro com CBS e IBS, nota a nota.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/financeiro/",
+  "ogImage": "https://inferis.com.br/assets/og/financeiro.jpg",
+  "h1": "Reforma Tributária para o financeiro.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/financeiro/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/financeiro/",
+     "name": "Reforma Tributária: capital de giro e split payment | Inferis",
+     "description": "Quanto do valor pago vira crédito em 2027 e como isso pesa no caixa: projete custos, receita, crédito tributário e capital de giro com CBS e IBS, nota a nota.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/financeiro.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/financeiro/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/financeiro/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Reforma Tributária",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Financeiro",
+       "item": "https://inferis.com.br/reforma-tributaria/financeiro/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/financeiro/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/financeiro/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Como a Reforma Tributária afeta o capital de giro?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em 2027 uma parte maior do valor pago nas compras vira crédito. É caixa que sai na compra e só volta quando o crédito é compensado. No exemplo da nota de R$ 100,00, o crédito passa de 22,33% para 25,74% do valor pago."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quando nasce o crédito de CBS e IBS?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O crédito nasce quando o fornecedor extingue o débito dele, e não quando a nota é emitida. A mesma compra pode liberar crédito no ato ou dias depois, conforme o recolhimento, inclusive pelo split payment."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "A CBS e o IBS vão entrar na base do ICMS?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É um cenário possível para 2027. A Inferis permite projetar o ICMS por dentro sobre a nova base (valor líquido mais CBS e IBS) para medir o efeito no preço e no caixa."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O que muda em 2026?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 é o ano-teste: CBS de 0,9% e IBS de 0,1%, compensáveis com tributos federais. É a janela para testar o sistema e mapear fornecedores antes da alíquota cheia de 2027."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Consigo exportar os resultados?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. As simulações ficam salvas por cenário e podem ser exportadas em CSV, consolidado ou expandido."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "contadores": {
+  "path": "/reforma-tributaria/contadores/",
+  "title": "Reforma Tributária para contadores: Simples híbrido | Inferis",
+  "description": "Para contadores: NF-e, NFS-e e CT-e dos clientes lidas item a item, cálculo aberto de CBS e IBS 2027, valor líquido da NT 2026.008 e regime híbrido do Simples.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/contadores/",
+  "ogImage": "https://inferis.com.br/assets/og/contadores.jpg",
+  "h1": "Reforma Tributária para contadores.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/contadores/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/contadores/",
+     "name": "Reforma Tributária para contadores: Simples híbrido | Inferis",
+     "description": "Para contadores: NF-e, NFS-e e CT-e dos clientes lidas item a item, cálculo aberto de CBS e IBS 2027, valor líquido da NT 2026.008 e regime híbrido do Simples.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/contadores.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/contadores/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/contadores/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Reforma Tributária",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Contadores",
+       "item": "https://inferis.com.br/reforma-tributaria/contadores/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/contadores/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/contadores/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Como calcular o valor líquido da NT 2026.008?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Valor líquido = valor do produto − ICMS − PIS − COFINS (vProd − ICMS − PIS − COFINS = vProdLiq). A Inferis calcula o valor líquido total e por unidade de cada item, em lote, a partir dos XMLs."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quais clientes passam a tomar crédito em 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os do lucro real e do lucro presumido, com crédito amplo de CBS e IBS, e os do Simples Nacional que optarem pelo regime híbrido. Fornecedores do Simples têm apenas duas oportunidades por ano para migrar de regime."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "A Inferis ajuda na decisão do regime híbrido do Simples?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ela mostra, com as notas do cliente, o custo efetivo dos compradores dele em cada cenário. É o dado que sustenta a conversa sobre a opção pelo regime híbrido."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Consigo atender vários clientes?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A Inferis é multiempresa, com controle de acesso por papéis e vínculo por empresa."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "A Inferis faz apuração ou escrituração?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. É uma ferramenta de simulação e decisão. Não substitui a apuração, a escrituração nem a entrega de obrigações fiscais."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "advogados": {
+  "path": "/reforma-tributaria/advogados/",
+  "title": "Reforma Tributária para advogados: contratos e 2027 | Inferis",
+  "description": "Para tributaristas: mostre ao cliente o impacto da Reforma no custo, na carga das vendas e no crédito das entradas, e embase o reequilíbrio dos contratos de 2027.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/advogados/",
+  "ogImage": "https://inferis.com.br/assets/og/advogados.jpg",
+  "h1": "Reforma Tributária para advogados.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/advogados/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/advogados/",
+     "name": "Reforma Tributária para advogados: contratos e 2027 | Inferis",
+     "description": "Para tributaristas: mostre ao cliente o impacto da Reforma no custo, na carga das vendas e no crédito das entradas, e embase o reequilíbrio dos contratos de 2027.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/advogados.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/advogados/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/advogados/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Reforma Tributária",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Advogados",
+       "item": "https://inferis.com.br/reforma-tributaria/advogados/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/advogados/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/advogados/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Como a Inferis ajuda o advogado tributarista?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Empresas procuram o advogado tributarista para entender como a Reforma afeta a própria operação. Com as notas do cliente, a Inferis mostra item a item o impacto no custo das compras, na carga tributária das vendas e no crédito tributário das entradas, hoje e em 2027. O parecer é do advogado; os números chegam prontos e abertos."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Que impactos da Reforma a Inferis mostra?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custo total e custo efetivo das compras, carga tributária e receita líquida das vendas, crédito gerado nas entradas, o preço equivalente de 2027 e as duas referências de preço para renegociar contratos. Tudo por nota, por item, por fornecedor e por cliente."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Contratos de 2026 precisam ser renegociados para 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todo contrato com vigência após 1º de janeiro de 2027 passa a ter outra composição tributária no mesmo preço: CBS e IBS no lugar de PIS e COFINS, IPI zerado e crédito amplo para o contratante. Por isso precisa de uma nova base de preço."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "As premissas do cálculo ficam documentadas?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Cada simulação guarda as premissas, a versão das regras e a versão do motor de cálculo. Cada número é rastreável até a premissa que o gerou, o que sustenta o parecer."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "A Inferis substitui o parecer?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. A Inferis entrega o diagnóstico numérico da operação. A interpretação, o enquadramento e a recomendação continuam sendo do advogado."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Consigo atender vários clientes do escritório?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A Inferis é multiempresa, com acesso por papéis e vínculo por empresa, para trabalhar a carteira de clientes em escala."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "como-calcular": {
+  "path": "/reforma-tributaria/como-calcular/",
+  "title": "Calculadora da Reforma Tributária: CBS e IBS 2027 | Inferis",
+  "description": "Simule uma nota e veja o cálculo passo a passo: expurgo dos tributos atuais, valor líquido, CBS e IBS 2027 e o ICMS por dentro sobre a nova base.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/como-calcular/",
+  "ogImage": "https://inferis.com.br/assets/og/como-calcular.jpg",
+  "h1": "Reforma Tributária: como calcular.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/como-calcular/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/como-calcular/",
+     "name": "Calculadora da Reforma Tributária: CBS e IBS 2027 | Inferis",
+     "description": "Simule uma nota e veja o cálculo passo a passo: expurgo dos tributos atuais, valor líquido, CBS e IBS 2027 e o ICMS por dentro sobre a nova base.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/como-calcular.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/como-calcular/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/como-calcular/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Reforma Tributária",
+       "item": "https://inferis.com.br/reforma-tributaria/compras/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Como calcular",
+       "item": "https://inferis.com.br/reforma-tributaria/como-calcular/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/como-calcular/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/como-calcular/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Por que o ICMS por dentro tem alíquota efetiva maior que 18%?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque o ICMS integra a própria base. Os 18% incidem sobre um valor que já contém o ICMS; medido sobre o valor líquido, o peso é maior. No exemplo, R$ 15,71 sobre R$ 64,95 de líquido: 24,19%."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Por que o ICMS sai da base de PIS e COFINS?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque o ICMS não compõe a receita da empresa (STF, Tema 69). No exemplo, PIS e COFINS incidem sobre R$ 71,57, o valor do produto sem o ICMS."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Qual alíquota de CBS usar em 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Inferis usa a referência de 11,3% (TCU, TC 006.529/2026-7), configurável no perfil da empresa. O IBS de 2027 entra a 0,1%."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Como fica a base do ICMS em 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No cenário da Inferis, a nova base é o valor líquido mais CBS e IBS, e o ICMS é calculado por dentro sobre ela: R$ 72,35 ÷ 0,82 = R$ 88,23, com ICMS de R$ 15,88."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O que é por dentro e por fora?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por dentro: o tributo está contido no valor do produto (ICMS, PIS, COFINS). Por fora: o tributo é somado ao total da nota (IPI, ICMS-ST). No expurgo, o que é por fora sai do total; o que é por dentro sai do valor do produto."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "simulador-nf-e": {
+  "path": "/reforma-tributaria/simulador-nf-e/",
+  "title": "Simulador da Reforma Tributária para NF-e (bens) | Inferis",
+  "description": "A Inferis lê cada NF-e de compra e calcula, item a item, o custo efetivo de hoje e de 2027 e o preço equivalente para negociar com o fornecedor.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/",
+  "ogImage": "https://inferis.com.br/assets/og/simulador-nf-e.jpg",
+  "h1": "Simulador de Bens NF-e.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/",
+     "name": "Simulador da Reforma Tributária para NF-e (bens) | Inferis",
+     "description": "A Inferis lê cada NF-e de compra e calcula, item a item, o custo efetivo de hoje e de 2027 e o preço equivalente para negociar com o fornecedor.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/simulador-nf-e.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Simuladores",
+       "item": "https://inferis.com.br/#simuladores"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Simulador de Bens (NF-e)",
+       "item": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/simulador-nf-e/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "O que o Simulador de Bens calcula?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A partir da NF-e de compra, o custo efetivo de hoje e de 2027, item a item, e o preço equivalente de compra: o valor bruto que preserva o custo efetivo de hoje. Por nota, por produto e por fornecedor, com memória de cálculo."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quais tributos da NF-e entram na simulação?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os tributos destacados em cada item: ICMS, PIS e COFINS, que estão por dentro do valor do produto, e IPI e ICMS-ST, que vêm por fora. Para 2027, a Inferis projeta CBS, IBS e o ICMS por dentro sobre a nova base, com o IPI zerado."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Qual alíquota de CBS o simulador usa?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A referência de 11,3% (TCU, TC 006.529/2026-7), já cadastrada e configurável no perfil da empresa. O IBS de 2027 entra a 0,1%."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "E as notas de fornecedores do Simples Nacional?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notas emitidas por empresas do Simples Nacional não trazem os tributos destacados, porque eles são recolhidos em outro documento. Por isso a Inferis não consegue extrair essas informações da nota."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Preciso integrar com o ERP?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Você envia os XMLs das NF-e, ou arquivos CSV e Excel, em lote. O conversor valida os dados antes da simulação."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "simulador-nfs-e": {
+  "path": "/reforma-tributaria/simulador-nfs-e/",
+  "title": "Simulador da Reforma Tributária para NFS-e (serviços) | Inferis",
+  "description": "A Inferis lê cada NFS-e e projeta o custo do serviço em 2027 em dois cenários de preço, com CBS, IBS e o ISS que continua durante a transição.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/",
+  "ogImage": "https://inferis.com.br/assets/og/simulador-nfs-e.jpg",
+  "h1": "Simulador de Serviços NFS-e.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/",
+     "name": "Simulador da Reforma Tributária para NFS-e (serviços) | Inferis",
+     "description": "A Inferis lê cada NFS-e e projeta o custo do serviço em 2027 em dois cenários de preço, com CBS, IBS e o ISS que continua durante a transição.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/simulador-nfs-e.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Simuladores",
+       "item": "https://inferis.com.br/#simuladores"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Simulador de Serviços (NFS-e)",
+       "item": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/simulador-nfs-e/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "O que muda na NFS-e com a Reforma Tributária?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A partir de 2027, a CBS substitui o PIS e a COFINS, e o IBS entra a 0,1%. Quem contrata o serviço passa a ter crédito amplo de CBS e IBS. O ISS continua sendo cobrado durante a transição."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O ISS acaba em 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O ISS segue com as alíquotas atuais até 2028, recua de 2029 a 2032 e é extinto em 2033, quando o IBS assume por completo (Emenda Constitucional 132/2023)."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quais são os dois cenários do Simulador de Serviços?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No primeiro, o fornecedor tira do preço o PIS e a COFINS que deixam de existir e soma CBS e IBS por fora. No segundo, ele mantém o preço de hoje e só soma CBS e IBS por fora. A Inferis mostra o custo efetivo do serviço nos dois."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Quem pode tomar crédito de CBS e IBS sobre serviços?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Empresas do lucro real e do lucro presumido, e as do Simples Nacional que optarem pelo regime híbrido. A exceção são bens e serviços de uso e consumo pessoal (LC 214/2025, arts. 47 e 57)."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "E os serviços prestados por empresas do Simples Nacional?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notas emitidas por empresas do Simples Nacional não trazem os tributos destacados, porque eles são recolhidos em outro documento. Por isso a Inferis não consegue extrair essas informações da nota."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "simulador-ct-e": {
+  "path": "/reforma-tributaria/simulador-ct-e/",
+  "title": "Simulador da Reforma Tributária para CT-e (fretes) | Inferis",
+  "description": "A Inferis lê cada CT-e e projeta o custo do frete em 2027, com CBS, IBS e o regime de PIS e COFINS do transportador. Sem o regime, simula os dois cenários.",
+  "canonical": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/",
+  "ogImage": "https://inferis.com.br/assets/og/simulador-ct-e.jpg",
+  "h1": "Simulador de Transportes CT-e.",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "Organization",
+     "@id": "https://inferis.com.br/#org",
+     "name": "Inferis",
+     "url": "https://inferis.com.br/",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/img/inferis-landing-mark.png"
+     },
+     "description": "Inteligência para a Reforma Tributária: simulação de compras e vendas com CBS e IBS, nota a nota.",
+     "sameAs": [
+      "https://www.linkedin.com/company/inferis-br/",
+      "https://www.instagram.com/inferis.br/"
+     ],
+     "areaServed": "BR",
+     "knowsLanguage": "pt-BR",
+     "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99815-5239",
+      "contactType": "sales",
+      "availableLanguage": "pt-BR"
+     }
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://inferis.com.br/#website",
+     "url": "https://inferis.com.br/",
+     "name": "Inferis",
+     "inLanguage": "pt-BR",
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     }
+    },
+    {
+     "@type": "WebPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/#webpage",
+     "url": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/",
+     "name": "Simulador da Reforma Tributária para CT-e (fretes) | Inferis",
+     "description": "A Inferis lê cada CT-e e projeta o custo do frete em 2027, com CBS, IBS e o regime de PIS e COFINS do transportador. Sem o regime, simula os dois cenários.",
+     "inLanguage": "pt-BR",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/#website"
+     },
+     "about": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "publisher": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "author": {
+      "@id": "https://inferis.com.br/#org"
+     },
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://inferis.com.br/assets/og/simulador-ct-e.jpg",
+      "width": 1200,
+      "height": 630
+     },
+     "breadcrumb": {
+      "@id": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/#breadcrumb"
+     },
+     "citation": [
+      "Lei Complementar nº 214/2025",
+      "TCU, TC 006.529/2026-7 (alíquota de referência da CBS)"
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Início",
+       "item": "https://inferis.com.br/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Simuladores",
+       "item": "https://inferis.com.br/#simuladores"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Simulador de Transportes (CT-e)",
+       "item": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/"
+      }
+     ]
+    },
+    {
+     "@type": "FAQPage",
+     "@id": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/#faq",
+     "isPartOf": {
+      "@id": "https://inferis.com.br/reforma-tributaria/simulador-ct-e/#webpage"
+     },
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "O que muda no CT-e com a Reforma Tributária?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A partir de 2027, a CBS substitui o PIS e a COFINS sobre o frete, e o IBS entra a 0,1%. Quem contrata o frete passa a ter crédito amplo de CBS e IBS. O ICMS do transporte continua durante a transição."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Por que o regime do transportador importa?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque define quanto de PIS e COFINS está no preço do frete hoje: 3,65% no regime cumulativo e 9,25% no não cumulativo. É o ponto de partida para projetar o frete de 2027."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "E se eu não souber o regime do transportador?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Inferis simula os dois cenários, cumulativo e não cumulativo, e mostra o custo do frete em cada um."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "O ICMS do frete acaba em 2027?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O ICMS segue com as alíquotas atuais até 2028, recua de 2029 a 2032 e é extinto em 2033 (Emenda Constitucional 132/2023)."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "E os transportadores do Simples Nacional?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notas emitidas por empresas do Simples Nacional não trazem os tributos destacados, porque eles são recolhidos em outro documento. Por isso a Inferis não consegue extrair essas informações da nota."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
