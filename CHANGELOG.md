@@ -2,6 +2,21 @@
 
 Cada versão é um commit com tag no repositório. Para ver tudo o que mudou entre duas versões: `git diff v1 v2 --stat` e `git diff v1 v2 -- prototipo/`.
 
+## Sincronização do lp.inferis.com.br — 19/11/2026
+
+Nova pasta `site/`: cópia exata do que está no ar em https://lp.inferis.com.br (projeto `inferis-site` na Vercel, publicação `dpl_51EjFJipbmxFPHEsHvRhxa8wmmQQ`). Os 81 arquivos foram baixados da Vercel e conferidos um a um pela impressão digital (SHA-1) da própria Vercel. A partir de agora, `site/` é a fonte das publicações da landing page.
+
+O que existe no ar e ainda não estava no repositório:
+
+- Páginas `/agendar`, `/obrigado`, `/planos`, `/teste-gratis`, `/resultados`, `/sua-opiniao` e `/preparo-da-simulacao`.
+- Públicos reorganizados: `/reforma-tributaria/financeiro-pricing/` e `/reforma-tributaria/fiscal-contabil/`. `/vendas/` e `/financeiro/` redirecionam para `financeiro-pricing` (`site/vercel.json`).
+- Funções em `site/api/`: captação de leads (`lead.js`), agendamento da simulação com horários livres (`slots.js`, `book.js`), envio de e-mails (Resend), funil no HubSpot, Meta CAPI e sincronização diária com o HubSpot (`cron-hubspot.js`, todo dia às 12h UTC).
+- Tema claro, página de demonstração (`assets/demo.*`), fotos por público e prints do sistema.
+
+As chaves (HubSpot, Resend, Google, Meta etc.) não ficam no código: são variáveis de ambiente do projeto na Vercel.
+
+`prototipo/` e `nextjs/` continuam como na v1.
+
 ## v1 — 09/11/2026
 
 Primeira entrega completa do novo site, aprovada pela Inferis e idêntica à prévia https://inferis-site.vercel.app.

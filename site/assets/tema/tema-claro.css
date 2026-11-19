@@ -1,0 +1,89 @@
+/* INFERIS LP · TESTE de direcoes criativas: base clara comum as direcoes A, B e C.
+   Carregada so com ?tema=a|b|c (ver TEMA_HEAD em gen_lp.py). Tokens da marca: --mist #F5F3FB, --ink #0B0920,
+   --vink #5B3FE0, --deep #2A1A80, --muted #4D4870 (design_kit/README). O roxo continua sendo a cor central. */
+:root{
+  --bg:#F5F3FB; --bg2:#FFFFFF; --bg3:#ECE8F8;
+  --ink:#0B0920; --ink2:#2B2747; --mute:#4D4870; --dim:#6B6590;
+  --lav:#5B3FE0; --lav2:#4A30C8; --vio:#7C5CFF; --vink:#5B3FE0; --deep:#2A1A80;
+  --line:rgba(42,26,128,.12); --line2:rgba(42,26,128,.22);
+  --gold:linear-gradient(100deg,#2A1A80 0%,#5B3FE0 55%,#7C5CFF 100%);
+}
+html{background:var(--bg);color:var(--ink)}
+body::before{background:radial-gradient(60% 45% at 92% -8%,rgba(124,92,255,.16),rgba(124,92,255,0) 70%),
+  radial-gradient(55% 40% at -12% 110%,rgba(91,63,224,.10),rgba(91,63,224,0) 70%),var(--bg)}
+body::after{opacity:.025}
+::selection{background:#5B3FE0;color:#fff}
+
+/* a rede de dados: em fundo claro, os pontos viram tinta (inverte a luminosidade e mantem o matiz) */
+#net{filter:invert(1) hue-rotate(180deg) saturate(1.3);opacity:.5}
+
+/* sem o halo escuro atras do texto (era para ler sobre a rede no fundo preto) */
+main h2,main h3,.cmp,.lst,.ledger,.figs,.tl,.plans,.faq,.s .intro,.s p{text-shadow:none}
+.cmp>div,.lst,.ledger,.faq,.plans>div,.tl>div{background:none}
+
+/* marca: wordmark em tinta */
+.brand img.w,.fn-h .brand img.w{content:url(inferis-wordmark-ink.png)}
+
+.k,.sim label,.sim .out h3,.dm-step{color:#5B3FE0}
+.rt{border-color:rgba(91,63,224,.4);color:#3D27B0;background:linear-gradient(90deg,rgba(124,92,255,.12),rgba(124,92,255,.02))}
+.rt::before{background:linear-gradient(135deg,#7C5CFF,#2A1A80)}
+.lnk{color:#4A30C8;border-bottom-color:rgba(74,48,200,.3)}
+.lnk::after{background:#4A30C8}
+
+/* botao principal: violeta solido */
+.btn{border:1px solid #5B3FE0;background:linear-gradient(180deg,#6A4FF0,#5B3FE0);color:#fff;
+  box-shadow:0 16px 34px -14px rgba(91,63,224,.7),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn:hover{box-shadow:0 20px 44px -14px rgba(91,63,224,.85),inset 0 1px 0 rgba(255,255,255,.3)}
+
+/* topo */
+.nav{background:rgba(245,243,251,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.nav .dd ul{background:rgba(255,255,255,.98);box-shadow:0 30px 60px -20px rgba(42,26,128,.28)}
+.nav .dd ul a:hover,.nav .dd ul a[aria-current]{background:rgba(91,63,224,.07)}
+.mnav{background:radial-gradient(70% 50% at 100% 0%,rgba(124,92,255,.14),rgba(124,92,255,0) 70%),#F5F3FB}
+.mb span{background:var(--ink)}
+.tbar{background:linear-gradient(90deg,#2A1A80,#5B3FE0 60%,#2A1A80);border-bottom:0}
+.tbar p{color:#E4DCFF}.tbar .tb-d{color:#fff}.tbar a{color:#fff;border-bottom-color:rgba(255,255,255,.5)}
+.sub{background:rgba(255,255,255,.9)}
+
+section.s.alt{background:rgba(255,255,255,.72)}
+.ledger .a.m{color:#B0336F}
+.ledger .tot{border-bottom-color:rgba(42,26,128,.35)}
+.ledger .lg b,.figs .ft b{background:rgba(91,63,224,.1)}
+.ledger .res{background:rgba(91,63,224,.07)}
+.sim .inp{border-bottom-color:rgba(42,26,128,.4)}
+.sim .chips button:hover,.sim .chips button:focus-visible{color:var(--ink)}
+.docs-row li{background:#fff}
+.tl::before{background:linear-gradient(90deg,#5B3FE0,#A98BFF)}
+.mo .cmp>div+div::before{background:linear-gradient(180deg,#5B3FE0,rgba(91,63,224,.15))}
+.pub a:hover,.sims a:hover,.pick a:hover{background:linear-gradient(90deg,rgba(91,63,224,.07),rgba(91,63,224,0))}
+
+/* telas do produto (ja sao claras): sombra suave em vez do brilho */
+.stage::before{opacity:.35}
+.bw{box-shadow:0 40px 90px -30px rgba(42,26,128,.38),0 0 0 1px rgba(42,26,128,.12)}
+.bar{background:#ECE8F8}.bar i{background:#CFC6EE}.bar span{background:rgba(42,26,128,.06);color:var(--mute)}
+.lens{box-shadow:0 30px 60px -12px rgba(42,26,128,.35),0 0 0 2px rgba(91,63,224,.55)}
+.lens > span{color:#4A30C8}
+
+/* fechamento: o logo 3D (video em fundo preto) vira tinta sobre o claro */
+.close::before{background:radial-gradient(closest-side,rgba(124,92,255,.16),rgba(124,92,255,0))}
+.close video,.close img.mk{display:none}
+.close .wrap::before{content:"";display:block;width:132px;height:176px;margin:0 auto 8px;background:url(../img/inferis-landing-mark.png) center/contain no-repeat;
+  filter:drop-shadow(0 24px 40px rgba(91,63,224,.35))}
+
+footer{background:#ECE8F8}
+
+/* funil: blocos, pop-up e formularios */
+.prom{background:radial-gradient(120% 160% at 0% 0%,rgba(124,92,255,.12),rgba(124,92,255,0) 60%),#fff}
+.dm-scrim{background:rgba(20,14,50,.42)}
+.dm-card{background:radial-gradient(90% 60% at 100% 0%,rgba(124,92,255,.12),rgba(124,92,255,0) 70%),#fff;box-shadow:0 40px 100px -20px rgba(42,26,128,.45)}
+.dm-inline{background:radial-gradient(90% 60% at 100% 0%,rgba(124,92,255,.10),rgba(124,92,255,0) 70%),#fff;box-shadow:0 30px 70px -30px rgba(42,26,128,.3)}
+.dm-in{background:#fff;color:var(--ink)}
+.dm-in:focus{border-color:#5B3FE0;box-shadow:0 0 0 4px rgba(91,63,224,.14)}
+.dm-opts button,.dm-day,.dm-slot{background:#fff;color:var(--ink2)}
+.dm-opts button[aria-checked="true"],.dm-day[aria-pressed="true"],.dm-slot[aria-pressed="true"]{border-color:#5B3FE0;background:rgba(91,63,224,.09);color:var(--ink)}
+.dm-err{color:#B4234A}
+.dm-list li::before{background:linear-gradient(135deg,#7C5CFF,#2A1A80)}
+.dm-link{border-bottom-color:rgba(74,48,200,.35)}
+.ty .when{background:rgba(91,63,224,.08)}.ty .when b{color:var(--ink)}
+.vsl{background:radial-gradient(70% 70% at 50% 40%,rgba(124,92,255,.18),#ECE8F8)}
+.dfloat{border-color:rgba(255,255,255,.6)}

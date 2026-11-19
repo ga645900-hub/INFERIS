@@ -1,0 +1,19 @@
+{
+  "crons": [
+    { "path": "/api/cron-hubspot", "schedule": "0 12 * * *" }
+  ],
+  "redirects": [
+    { "source": "/reforma-tributaria/vendas/(.*)", "destination": "/reforma-tributaria/financeiro-pricing/", "permanent": true },
+    { "source": "/reforma-tributaria/financeiro/(.*)", "destination": "/reforma-tributaria/financeiro-pricing/", "permanent": true },
+    { "source": "/preparo-da-demo/(.*)", "destination": "/preparo-da-simulacao/", "permanent": true },
+    { "source": "/preparo-da-demo", "destination": "/preparo-da-simulacao/", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+    ] },
+    { "source": "/assets/(fonts|og|img)/(.*)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=86400" } ] }
+  ]
+}
