@@ -32,10 +32,10 @@ const LEVAR = `<ol style="margin:8px 0 0;padding-left:20px;color:#D9D4F2;">
 <li>Quem decide: compras, financeiro ou fiscal.</li></ol>`;
 
 export function confirmacao(L, t, meet) {
-  return {subject: `Simulação da Inferis confirmada: ${quando(t)}`, html: layout(`Sua simulação com o Gabriel: ${quando(t)}.`,
+  return {subject: `Simulação da Inferis confirmada: ${quando(t)}`, html: layout(`Sua simulação com a equipe da Inferis: ${quando(t)}.`,
     k('Simulação agendada') + h1(`${first(L.nome)}, sua simulação está marcada.`)
     + box(`<b style="font-weight:600">${h(quando(t))}</b><br><span style="color:#B5AFD6">Horário de Brasília · 30 minutos · Google Meet</span>${meet ? `<br><a href="${meet}" style="color:#E4DCFF">${h(meet)}</a>` : ''}`)
-    + `<p style="margin:0">O convite já está na sua agenda. O Gabriel vai te chamar no WhatsApp para confirmar: responda por lá.</p>`
+    + `<p style="margin:0">O convite já está na sua agenda. A equipe da Inferis vai te chamar no WhatsApp para confirmar: responda por lá.</p>`
     + `<p style="margin:22px 0 0;color:#F4F2FF">Para aproveitar os 30 minutos, leve:</p>${LEVAR}`
     + btn(`${SITE}/preparo-da-simulacao/?start=${encodeURIComponent(new Date(t).toISOString())}`, 'Veja como funciona a simulação')
     + `<p style="margin:16px 0 0;font-size:14px;color:#8F89B3">Precisa remarcar? Responda este e-mail.</p>`)};
@@ -48,14 +48,14 @@ export function lembrete(L, t, meet, horas) {
       + box(`<b style="font-weight:600">${h(quando(t))}</b><br><span style="color:#B5AFD6">Horário de Brasília · 30 minutos</span>`)
       + (meet ? btn(meet, 'Entrar no Google Meet') : '')
       + `<p style="margin:8px 0 0">Separe as notas de um fornecedor (XML, CSV ou Excel). Na simulação, o lote fica pronto em menos de 1 minuto e você sai com os números de 2027.</p>`
-      + `<p style="margin:16px 0 0;font-size:14px;color:#8F89B3">Não vai conseguir? Responda este e-mail e o Gabriel propõe outro horário.</p>`)};
+      + `<p style="margin:16px 0 0;font-size:14px;color:#8F89B3">Não vai conseguir? Responda este e-mail e a gente propõe outro horário.</p>`)};
 }
 export function abandono(email, n) {
   const url = `${SITE}/agendar/?email=${encodeURIComponent(email)}&utm_source=email&utm_medium=abandono&utm_campaign=demo${n}`;
   const dias = Math.ceil((Date.parse('2027-01-01T00:00:00-03:00') - Date.now()) / 864e5);
   if (n === 1) return {subject: 'Falta só escolher o horário da sua simulação', html: layout('Sua simulação da Inferis ficou pela metade.',
     k('Simulação da Inferis') + h1('Falta só escolher o horário.')
-    + `<p style="margin:0">Você começou a agendar a simulação da Inferis e não chegou ao fim. São 30 minutos com o Gabriel, com as notas de um fornecedor seu: o custo de cada compra em 2027, o crédito de CBS e IBS e o preço para negociar.</p>`
+    + `<p style="margin:0">Você começou a agendar a simulação da Inferis e não chegou ao fim. São 30 minutos com a equipe da Inferis, com as notas de um fornecedor seu: o custo de cada compra em 2027, o crédito de CBS e IBS e o preço para negociar.</p>`
     + btn(url, 'Escolher o horário'))};
   return {subject: dias > 1 ? `Faltam ${dias} dias para a CBS integral` : 'A CBS integral começa agora', html: layout('O que muda nas suas notas em 2027.',
     k('Reforma Tributária') + h1(dias > 1 ? `Faltam ${dias} dias para 2027.` : 'A CBS integral começa agora.')
@@ -65,7 +65,7 @@ export function abandono(email, n) {
 }
 export function aviso(L, t, meet) {
   const wa = 'https://wa.me/55' + String(L.whats).replace(/\D/g, '').replace(/^55(?=\d{10,11}$)/, '')
-    + '?text=' + encodeURIComponent(`Olá, ${String(L.nome).split(' ')[0]}! Aqui é o Gabriel, da Inferis. Confirmo a nossa simulação de ${quando(t)}. Consegue trazer as notas (XML) de um fornecedor?`);
+    + '?text=' + encodeURIComponent(`Olá, ${String(L.nome).split(' ')[0]}! Aqui é da equipe da Inferis. Confirmo a nossa simulação de ${quando(t)}. Consegue trazer as notas (XML) de um fornecedor?`);
   const linhas = [['Quando', quando(t)], ['Nome', L.nome], ['Empresa', L.empresa], ['Área', L.areaTxt], ['Regime', L.regime], ['Faturamento', L.fat], ['Clientes', L.clientes],
     ['E-mail', L.email], ['WhatsApp', L.whats], ['Página', L.page], ['Origem', [L.attr?.utm_source, L.attr?.utm_campaign].filter(Boolean).join(' / ') || L.attr?.landing || '']].filter(x => x[1]);
   return {subject: `Nova simulação: ${L.empresa} · ${quando(t)}`, html: layout(`${L.nome} (${L.empresa}) agendou uma simulação.`,
@@ -104,7 +104,7 @@ export function teste(L, n) {
     k('Teste gratuito') + h1(`${nome ? nome.replace(/, $/, ', o') : 'O'} que você achou <span style="font-weight:600;color:#E4DCFF">da Inferis?</span>`)
     + `<p style="margin:0 0 20px">Escolha a resposta que mais combina com o seu teste. Ela vai direto para o time e decide o que melhoramos primeiro.</p>`
     + `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">${op}</table>`
-    + `<p style="margin:10px 0 0;font-size:14px;color:#8F89B3">Prefere escrever? Responda este e-mail: quem lê é o Gabriel.</p>`, 'teste')};
+    + `<p style="margin:10px 0 0;font-size:14px;color:#8F89B3">Prefere escrever? Responda este e-mail: quem lê é a equipe da Inferis.</p>`, 'teste')};
 }
 export function opiniaoAviso(L, r, comentario) {
   return {subject: `Opinião do teste: ${OPINIOES[r] || r} · ${L.email}`, html: layout(`${L.email}: ${OPINIOES[r] || r}`,

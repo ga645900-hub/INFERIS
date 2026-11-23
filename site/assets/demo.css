@@ -200,3 +200,4 @@
 .pl li{padding:12px 0;border-top:1px solid var(--line);color:var(--ink2);font-weight:300}
 .pl .btn{align-self:flex-start}
 @media (max-width:980px){.pls{grid-template-columns:1fr}.pl,.pl + .pl{padding:32px 0;border-left:0}.pl-dest{padding-left:18px!important;padding-right:18px}.pl-d{min-height:0}}
+.ty .vsl-by{margin:14px auto 0;font-size:var(--fs-sm);letter-spacing:.02em;color:var(--mute);max-width:none}

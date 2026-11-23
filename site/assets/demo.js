@@ -141,7 +141,7 @@
           <p class="dm-load">Abrindo o teste gratuito…</p></div>`;
       },
       contato() {
-        return `<form class="dm-f" data-f="contato" novalidate>${head(4, 'Para quem é a simulação?', 'O Gabriel confirma pelo WhatsApp.')}
+        return `<form class="dm-f" data-f="contato" novalidate>${head(4, 'Para quem é a simulação?', 'A equipe da Inferis confirma pelo WhatsApp.')}
           <input class="dm-in" name="nome" autocomplete="name" placeholder="Seu nome" value="${esc(st.nome || '')}" required maxlength="80" aria-label="Seu nome">
           <input class="dm-in" name="empresa" autocomplete="organization" placeholder="${escritorio(st.area) ? 'Escritório' : 'Empresa'}" value="${esc(st.empresa || '')}" required maxlength="100" aria-label="Empresa">
           <input class="dm-in" name="whats" type="tel" autocomplete="tel" inputmode="tel" placeholder="WhatsApp com DDD" value="${esc(st.whats || '')}" required maxlength="16" aria-label="WhatsApp com DDD">
@@ -150,8 +150,8 @@
           <button class="btn dm-go" type="submit">Escolher o horário <span aria-hidden="true">→</span></button>${back()}</form>`;
       },
       agenda() {
-        if (!days) return `<div class="dm-f">${head(4, 'Escolha o horário', 'Horário de Brasília · 30 minutos pelo Google Meet')}<p class="dm-load">Consultando a agenda do Gabriel…</p></div>`;
-        if (!days.length) return `<div class="dm-f">${head(4, 'Escolha o horário')}<p class="dm-sub">A agenda das próximas duas semanas está cheia. Chame o Gabriel no WhatsApp e ele encaixa a sua simulação.</p><a class="btn dm-go" href="${waLink()}" target="_blank" rel="noopener">Falar no WhatsApp</a>${back()}</div>`;
+        if (!days) return `<div class="dm-f">${head(4, 'Escolha o horário', 'Horário de Brasília · 30 minutos pelo Google Meet')}<p class="dm-load">Consultando a agenda…</p></div>`;
+        if (!days.length) return `<div class="dm-f">${head(4, 'Escolha o horário')}<p class="dm-sub">A agenda das próximas duas semanas está cheia. Chame a equipe da Inferis no WhatsApp e a gente encaixa a sua simulação.</p><a class="btn dm-go" href="${waLink()}" target="_blank" rel="noopener">Falar no WhatsApp</a>${back()}</div>`;
         const tabs = days.map((d, i) => { const [w, dm] = dayLabel(d.slots[0]); return `<button type="button" class="dm-day" aria-pressed="${i === day}" data-day="${i}"><small>${w}</small><b>${dm}</b></button>`; }).join('');
         const times = days[day].slots.map(s => `<button type="button" class="dm-slot" aria-pressed="${s === slot}" data-slot="${s}">${fHM.format(new Date(s))}</button>`).join('');
         return `<div class="dm-f">${head(4, 'Escolha o horário', 'Horário de Brasília · 30 minutos pelo Google Meet')}
@@ -160,12 +160,12 @@
           <button class="btn dm-go" type="button" data-book${slot ? '' : ' disabled'}>${slot ? 'Confirmar: ' + dayLabel(slot).join(' ') + ', ' + fHM.format(new Date(slot)) : 'Confirmar minha simulação'}</button>${back()}</div>`;
       },
       erro() {
-        return `<div class="dm-f">${head(4, 'A agenda não respondeu')}<p class="dm-sub">Chame o Gabriel no WhatsApp e ele marca a simulação com você.</p><a class="btn dm-go" href="${waLink()}" target="_blank" rel="noopener">Falar no WhatsApp</a>${back()}</div>`;
+        return `<div class="dm-f">${head(4, 'A agenda não respondeu')}<p class="dm-sub">Chame a equipe da Inferis no WhatsApp e a gente marca a simulação com você.</p><a class="btn dm-go" href="${waLink()}" target="_blank" rel="noopener">Falar no WhatsApp</a>${back()}</div>`;
       },
     };
     let cur = st.email && opts.skipEmail ? 'area' : 'email', hist = [];
     function back() { return `<button type="button" class="dm-back" data-back>← Voltar</button>`; }
-    function waLink() { return `${WA}?text=${encodeURIComponent(`Olá, Gabriel! Sou ${st.nome || ''} (${st.empresa || ''}) e quero agendar uma simulação da Inferis.`)}`; }
+    function waLink() { return `${WA}?text=${encodeURIComponent(`Olá, equipe Inferis! Sou ${st.nome || ''} (${st.empresa || ''}) e quero agendar uma simulação da Inferis.`)}`; }
 
     function go(name, push = true) {
       if (push && cur !== name) hist.push(cur);
@@ -257,7 +257,7 @@
       box = document.createElement('div');
       box.className = 'dm'; box.setAttribute('data-lenis-prevent', '');
       box.innerHTML = `<div class="dm-scrim" data-x></div><div class="dm-card" role="dialog" aria-modal="true" aria-labelledby="dm-t">
-        <header class="dm-h"><img src="${ROOT}assets/img/inferis-landing-mark.png" alt=""><div><b id="dm-t">Agende a sua simulação</b><small>30 minutos com o Gabriel · uma nota sua · sem compromisso</small></div>
+        <header class="dm-h"><img src="${ROOT}assets/img/inferis-landing-mark.png" alt=""><div><b id="dm-t">Agende a sua simulação</b><small>30 minutos com a equipe da Inferis · uma nota sua · sem compromisso</small></div>
         <button type="button" class="dm-x" data-x aria-label="Fechar"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 3l10 10M13 3L3 13"/></svg></button></header>
         <div class="dm-body"></div>${MOCK ? '<p class="dm-mock">Modo de teste: horários simulados, nada é enviado.</p>' : ''}</div>`;
       document.body.appendChild(box);
@@ -327,7 +327,7 @@
       when.hidden = false;
       const z = x => x.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
       const meet = qs.get('meet') || '';
-      const det = `Simulação da Inferis com o Gabriel (30 minutos).${meet ? '\nGoogle Meet: ' + meet : ''}\nTraga as notas de um fornecedor: XML de NF-e, NFS-e ou CT-e, ou planilha.`;
+      const det = `Simulação da Inferis (30 minutos).${meet ? '\nGoogle Meet: ' + meet : ''}\nTraga as notas de um fornecedor: XML de NF-e, NFS-e ou CT-e, ou planilha.`;
       const cal = document.querySelector('[data-cal]');
       if (cal) {
         cal.querySelector('[data-gcal]').href = 'https://calendar.google.com/calendar/render?' + new URLSearchParams({action: 'TEMPLATE', text: 'Simulação da Inferis', dates: `${z(d)}/${z(end)}`, details: det, location: meet || 'Google Meet'});

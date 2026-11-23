@@ -1,8 +1,6 @@
 /* Direcao C · Contraste: faixas em violeta profundo (#2A1A80, cromatico, nao preto) no topo, no bloco da
-   simulacao e no fechamento, alternando com secoes claras. O ritmo claro/escuro marca os momentos de decisao.
-   MODO CONTRASTE (19/11/2026): estas regras so valem com <html class="contraste">, ligado pelo botao
-   "Contraste" no menu do topo (assets/site.js). O padrao do site e tudo claro (tema-claro.css). */
-html.contraste .hero,html.contraste .s.demo,html.contraste .close,html.contraste .stmt{
+   simulacao e no fechamento, alternando com secoes claras. O ritmo claro/escuro marca os momentos de decisao. */
+.hero,.s.demo,.close,.stmt{
   --ink:#F4F2FF; --ink2:#E4DCFF; --mute:#C3BCE6; --dim:#A49DCC; --lav:#C9BBFF; --lav2:#E4DCFF;
   --line:rgba(228,220,255,.16); --line2:rgba(228,220,255,.3);
   --gold:linear-gradient(100deg,#FFFFFF 0%,#E4DCFF 45%,#B9A4FF 100%);
@@ -10,42 +8,27 @@ html.contraste .hero,html.contraste .s.demo,html.contraste .close,html.contraste
   background:radial-gradient(70% 70% at 88% 0%,rgba(124,92,255,.55),rgba(124,92,255,0) 70%),
     radial-gradient(60% 60% at 0% 100%,rgba(57,135,229,.22),rgba(57,135,229,0) 70%),
     linear-gradient(180deg,#24157A,#1A0F5C)}
-html.contraste .hero .k,html.contraste .s.demo .k,html.contraste .close .k{color:#C9BBFF}
-html.contraste .hero .rt,html.contraste .s.demo .rt,html.contraste .close .rt{border-color:rgba(228,220,255,.45);color:#E4DCFF;background:rgba(255,255,255,.06)}
-html.contraste .hero .rt::before,html.contraste .close .rt::before{background:linear-gradient(135deg,#fff,#A98BFF)}
-html.contraste .hero .lnk,html.contraste .s.demo .lnk,html.contraste .close .lnk{color:#E4DCFF;border-bottom-color:rgba(228,220,255,.35)}
-html.contraste .hero .lnk::after,html.contraste .close .lnk::after{background:#E4DCFF}
-html.contraste .hero .btn,html.contraste .s.demo .btn,html.contraste .close .btn{background:#fff;border-color:#fff;color:#2A1A80;box-shadow:0 18px 40px -14px rgba(0,0,0,.5)}
-html.contraste .hero .btn::after,html.contraste .close .btn::after{background:linear-gradient(105deg,transparent 35%,rgba(91,63,224,.18) 50%,transparent 65%);background-size:250% 100%;background-position:120% 0}
-html.contraste .s.demo .prom{background:rgba(255,255,255,.07);border-color:rgba(228,220,255,.3)}
-html.contraste .close video,html.contraste .close img.mk{display:block}
-html.contraste .close .wrap::before{content:none}
-html.contraste .close::before{background:radial-gradient(closest-side,rgba(169,139,255,.35),rgba(169,139,255,0))}
+.hero .k,.s.demo .k,.close .k{color:#C9BBFF}
+.hero .rt,.s.demo .rt,.close .rt{border-color:rgba(228,220,255,.45);color:#E4DCFF;background:rgba(255,255,255,.06)}
+.hero .rt::before,.close .rt::before{background:linear-gradient(135deg,#fff,#A98BFF)}
+.hero .lnk,.s.demo .lnk,.close .lnk{color:#E4DCFF;border-bottom-color:rgba(228,220,255,.35)}
+.hero .lnk::after,.close .lnk::after{background:#E4DCFF}
+.hero .btn,.s.demo .btn,.close .btn{background:#fff;border-color:#fff;color:#2A1A80;box-shadow:0 18px 40px -14px rgba(0,0,0,.5)}
+.hero .btn::after,.close .btn::after{background:linear-gradient(105deg,transparent 35%,rgba(91,63,224,.18) 50%,transparent 65%);background-size:250% 100%;background-position:120% 0}
+.s.demo .prom{background:rgba(255,255,255,.07);border-color:rgba(228,220,255,.3)}
+.close video,.close img.mk{display:block}
+.close .wrap::before{content:none}
+.close::before{background:radial-gradient(closest-side,rgba(169,139,255,.35),rgba(169,139,255,0))}
 /* topo escuro, colado no hero */
-html.contraste .tbar{background:#140B45;color:#E4DCFF}
-html.contraste .nav{background:rgba(26,15,92,.92)}
-html.contraste .nav .brand img.w{content:normal}
-html.contraste .nav{--ink:#F4F2FF;--mute:#C3BCE6;--line2:rgba(228,220,255,.3)}
-html.contraste .nav .dd ul{--ink:#0B0920;--mute:#4D4870;--dim:#6B6590}
-html.contraste .nav .btn{background:#fff;border-color:#fff;color:#2A1A80}
-html.contraste .mb span{background:#fff}
-html.contraste section.s.alt{background:#fff}
-html.contraste footer{background:#140B45;--ink:#F4F2FF;--ink2:#E4DCFF;--mute:#C3BCE6;--dim:#A49DCC;--gold:linear-gradient(100deg,#FFFFFF 0%,#E4DCFF 45%,#B9A4FF 100%);color:#F4F2FF}
-html.contraste footer .brand img.w{content:normal}
+.tbar{background:#140B45;color:#E4DCFF}
+.nav{background:rgba(26,15,92,.92)}
+.nav .brand img.w{content:normal}
+.nav{--ink:#F4F2FF;--mute:#C3BCE6;--line2:rgba(228,220,255,.3)}
+.nav .dd ul{--ink:#0B0920;--mute:#4D4870;--dim:#6B6590}
+.nav .btn{background:#fff;border-color:#fff;color:#2A1A80}
+.mb span{background:#fff}
+section.s.alt{background:#fff}
+footer{background:#140B45;--ink:#F4F2FF;--ink2:#E4DCFF;--mute:#C3BCE6;--dim:#A49DCC;--gold:linear-gradient(100deg,#FFFFFF 0%,#E4DCFF 45%,#B9A4FF 100%);color:#F4F2FF}
+footer .brand img.w{content:normal}
 /* icone prateado no menu do topo (pedido do cliente: o roxo some no fundo violeta) */
-html.contraste .nav .brand img.m{content:url(inferis-mark-prata.png)}
-
-/* padrao claro: a faixa do topo tambem fica branca (o violeta volta no modo contraste) */
-html:not(.contraste) .tbar{background:#fff;border-bottom:1px solid var(--line)}
-html:not(.contraste) .tbar p{color:var(--mute)}
-html:not(.contraste) .tbar .tb-d{color:var(--ink)}
-html:not(.contraste) .tbar a{color:var(--lav2);border-bottom-color:rgba(74,48,200,.35)}
-
-/* botao "Contraste" no menu do topo */
-.tema-bt{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;cursor:pointer;
-  border:1px solid var(--line2);background:transparent;color:var(--mute);font:500 14px Inter;transition:color .2s,border-color .2s,background .2s}
-.tema-bt:hover{color:var(--ink);border-color:var(--lav)}
-.tema-bt:focus-visible{outline:2px solid var(--lav);outline-offset:2px}
-.tema-bt svg{width:18px;height:18px;flex:none}
-.tema-bt[aria-pressed="true"]{color:var(--ink);background:rgba(255,255,255,.1)}
-@media (max-width:1240px){.tema-bt span{display:none}.tema-bt{padding:0;width:40px;justify-content:center}}
+.nav .brand img.m{content:url(inferis-mark-prata.png)}

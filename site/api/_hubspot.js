@@ -58,23 +58,6 @@ function contactProps(L) {
   return p;
 }
 
-// cartao do funil (19/11/2026): o nome do negocio mostra a pessoa e a empresa, e a descricao do negocio
-// traz as respostas do formulario da LP (para ler direto no negocio, sem abrir o contato).
-const dealName = L => [L.nome, L.empresa].filter(Boolean).join(' · ');
-function dealResumo(L) {
-  const a = L.attr || {};
-  return [
-    L.areaTxt && `Área: ${L.areaTxt}`,
-    L.regime && `Regime tributário: ${L.regime}`,
-    L.fat && `Faturamento anual: ${L.fat}`,
-    L.clientes && `Empresas atendidas pelo escritório: ${L.clientes}`,
-    L.whats && `WhatsApp: ${L.whats}`,
-    L.email && `E-mail: ${L.email}`,
-    L.page && `Página do formulário: ${L.page}`,
-    `Origem: ${origem(a) || 'direto'}`,
-  ].filter(Boolean).join('\n');
-}
-
 async function upsertContact(L) {
   const j = await hs('/crm/v3/objects/contacts/batch/upsert', {inputs: [{idProperty: 'email', id: L.email, properties: contactProps(L)}]});
   return j.results[0].id;
@@ -105,13 +88,12 @@ export async function crmLead(L, etapa, extra = {}) {
   const contactId = await upsertContact(L);
   const [companyId, deal] = await Promise.all([company(L.empresa), openDeal(contactId, P)]);
   let dealId = deal?.id;
-  const info = {dealname: dealName(L), description: dealResumo(L)};
   if (!dealId) {
-    dealId = (await hs('/crm/v3/objects/deals', {properties: {...info, pipeline: P.pipeline, dealstage: stage}})).id;
+    dealId = (await hs('/crm/v3/objects/deals', {properties: {dealname: `${L.empresa} · Simulação`, pipeline: P.pipeline, dealstage: stage}})).id;
     await assoc('deals', dealId, 'contacts', contactId);
   } else {
     const atual = ORDEM.findIndex(k => P.id(k) === deal.properties.dealstage);
-    await hs(`/crm/v3/objects/deals/${dealId}`, {properties: atual < ORDEM.indexOf(etapa) ? {...info, dealstage: stage} : info}, 'PATCH');
+    if (atual < ORDEM.indexOf(etapa)) await hs(`/crm/v3/objects/deals/${dealId}`, {properties: {dealstage: stage}}, 'PATCH');
   }
   if (companyId) await Promise.allSettled([assoc('contacts', contactId, 'companies', companyId), assoc('deals', dealId, 'companies', companyId)]);
   if (extra.nota) {

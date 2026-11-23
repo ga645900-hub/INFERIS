@@ -81,23 +81,3 @@ document.querySelectorAll('[data-sim]').forEach(box => {
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { go(e.target); io.unobserve(e.target); } }), {rootMargin: '400px 0px'});
   vs.forEach(v => io.observe(v));
 })();
-
-// ---------- modo contraste ----------
-// Padrao: tudo claro. O botao "Contraste" no topo liga o visual escuro (assets/tema/tema-c.css) e a escolha fica salva.
-(function () {
-  const html = document.documentElement, meta = document.querySelector('meta[name="theme-color"]');
-  const sync = on => {
-    document.querySelectorAll('[data-tema]').forEach(b => {
-      b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      b.setAttribute('aria-label', on ? 'Desligar modo contraste' : 'Ligar modo contraste');
-    });
-    if (meta) meta.setAttribute('content', on ? '#1A0F5C' : '#F5F3FB');
-  };
-  sync(html.classList.contains('contraste'));
-  document.addEventListener('click', e => {
-    const b = e.target.closest('[data-tema]'); if (!b) return;
-    const on = html.classList.toggle('contraste');
-    try { localStorage.setItem('inferis-tema', on ? 'contraste' : 'claro'); } catch (_) {}
-    sync(on);
-  });
-})();
