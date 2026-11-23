@@ -342,7 +342,11 @@
   const vsl = document.querySelector('.vsl[data-video]');
   if (vsl && vsl.dataset.video) {
     const u = vsl.dataset.video;
-    vsl.innerHTML = /\.mp4($|\?)/.test(u) ? `<video src="${esc(u)}" controls playsinline preload="metadata"></video>` : `<iframe src="${esc(u)}" title="Como funciona a simulação da Inferis" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    vsl.innerHTML = /\.mp4($|\?)/.test(u) ? `<video src="${esc(u)}"${vsl.dataset.poster ? ` poster="${esc(vsl.dataset.poster)}"` : ''} controls playsinline preload="metadata"></video>` : `<iframe src="${esc(u)}" title="Como funciona a simulação da Inferis" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    // velocidade do video (23/11/2026: 1.3x). Os navegadores voltam a 1x ao carregar a midia, entao reaplica.
+    const v = vsl.querySelector('video'), rate = +(vsl.dataset.speed || 1.3);
+    if (v) { const sp = () => { v.defaultPlaybackRate = rate; if (!v.dataset.rateSet) { v.playbackRate = rate; v.dataset.rateSet = '1'; } };
+      sp(); v.addEventListener('loadedmetadata', () => { v.dataset.rateSet = ''; sp(); }); v.addEventListener('play', sp, {once: true}); }
   }
 
   // ---------- pagina /teste-gratis/: lead fora do perfil da simulação ----------
